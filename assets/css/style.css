@@ -6,3 +6,11 @@
 body{
     background-color:gray;
 }
+
+#choices_div{
+    width: 50%;
+    height: 25%;
+    color: #ffffff;
+    background-color: #cccccc;
+    font-size: 18px;
+}

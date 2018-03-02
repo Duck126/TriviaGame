@@ -1,4 +1,4 @@
-$.fn.trivia = function () {
+$(document).ready(function () {
     var _f = this;
 
     _f.userAnswer = null;
@@ -107,20 +107,17 @@ _f.askQ = function () {
         
         for (let i = 0; i < answerArray.length; i++) {
             console.log(answerArray[i]);
-            if (_f.buttonsArray[ind] == answerArray[i]) {
-                var button = $('<button type="button" class="btn btn-outline-success">');
-                button.text(answerArray[i]);
-                button.sttr('data-id', i);
-                $('#choices').append(button);
-            }
+            $("#answ" + i).text(answerArray[i]);
+             
+
          
-                answerA.html(answerArray[i]);
-            $('#answerA').append(answerA);
+                
         }
-    }
+    };
 
 };
 
-askQ();
-console.log(answerArray[i]);
-};            
+_f.askQ();
+
+
+});            

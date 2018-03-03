@@ -12,44 +12,51 @@
         crossorigin="anonymous">
 
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-    <title>Hello, world!</title>
+    <title>Millionare Trivia</title>
 </head>
 
 <body>
+    <div class="startScreen"></div>
+    <div class="card text-center"></div>
+    <div class="card-header">
+        <h3>Who Wants to be a Millionare Trivia</h3>
 
-    <div class="card text-center">
-        <div class="card-header">
-            <ul class="nav nav-pills card-header-pills">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-            </ul>
+    </div>
+
+
+
+    <div class="card-body"></div>
+    <div id="timernew"></div>
+    <p>Seconds remaining: </p><div id="countdown">5</div>
+    <div id="questionDiv"></div>
+    <div class="row">
+        <div id="choices_div">
+            <button type="button" id="0" class="btn btn-outline-success">A:
+                <span id="answ0" class="a1"></span>
+            </button>
+
+
+            <button type="button" id="1" class="btn btn-outline-success">B:
+                <span id="answ1" class="a2"></span>
+            </button>
+
+
+
+            <button type="button" id="2" class="btn btn-outline-success">C:
+                <span id="answ2" class="a3"></span>
+            </button>
+
+
+            <button type="button" id="3" class="btn btn-outline-success">D:
+                <span id="answ3" class="a4"></span>
+            </button>
+
         </div>
-        <div class="card-body">
-            <h3 class="card-title">Who Wants to be a Millionare?</h3>
-            <div id = "questionDiv"></div>
-            <div class="row">
-                <div id ="choices_div">
-                    <button type="button" class="btn0 btn btn-outline-success">A:<span id="answ0"></span> </button>
-                </div>
-                <div class="answerB col">
-                    <button type="button" class="btn1 btn btn-outline-success">B:<span id="answ1"></span> </button>
-                </div>
-                <div class="w-100"></div>
-                <div class="answerC col">
-                    <button type="button" class=" btn2 btn btn-outline-success">C:<span id="answ2"></span> </button>
-                </div>
-                <div class="answerD col">
-                    <button type="button" class="btn3 btn btn-outline-success">D:<span id="answ3"></span> </button>
-                </div>
-            </div>
-        </div>
+    </div>
+
+    <div class="progress">
+        <div id="money1" class="progress-bar bg-success" role="progressbar" style="width: 0%" aria-valuenow="25" aria-valuemin="0"
+            aria-valuemax="100"></div>
     </div>
 
 
@@ -65,12 +72,11 @@
 
 
 
-    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
